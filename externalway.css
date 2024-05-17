@@ -1,0 +1,12 @@
+h1{
+    color: blue;
+    font-size: large;
+    font-style: inherit;
+    background-color: aqua;
+}
+
+h4{
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
