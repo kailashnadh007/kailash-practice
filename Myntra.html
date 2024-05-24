@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myntra</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0%;
+            margin: 0%;
+        }
+      #nav{
+        height: 60px;
+        width: 100%;
+        border: 2px solid ;
+        display: flex;
+      }
+
+      #nav>article{
+        display: flex;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+      }
+
+      #logo{
+        /* border: 2px solid red; */
+        height: 100%;
+        width: 10%;
+        padding: 2px;
+      }
+
+      #logo>img{
+        float: right;
+      }
+
+      #menu{
+        /* border: 2px solid gold; */
+        height: 100%;
+        width: 40%;
+        align-items: center;
+        
+      
+      }
+
+      
+      #acc{
+        /* border: 2px solid blue; */
+        height: 100%;
+        width: 40%;
+        display:flex;
+        justify-content:left;
+        align-items: center;
+      }
+
+      #menu>ol{
+        list-style-type: none;
+        align-items: center;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 3%;
+      }
+
+      #menu>ol>li>a{
+        text-decoration: none;
+        color: black;
+        font-size:medium;
+        font-family: Arial, Helvetica, sans-serif;
+        
+      }
+      #acc{
+          padding: 1%;
+      }
+
+      #acc>ol{
+        list-style-type: none;
+        align-items: center;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 3%;
+      }
+
+      #acc>ol>li>a{
+        text-decoration: none;
+        color: black;
+        font-size:small;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    </style>
+</head>
+<body>
+    <section id="nav">
+      <article>
+        <div id="logo"><img src="./myntra.jpg" alt="myntra" height="50px" width="50px"></div>
+        <div id ="menu">
+          <ol>
+          <li><a href="">MEN</a></li>
+          <li><a href="">WOMEN</a></li>
+          <li><a href="">KIDS</a></li>
+          <li><a href="">HOME&LIVING</a></li>
+          <li><a href="">STUDIO</a></li>
+        </ol></div>
+        <div id="acc">
+          <input type="text" style="height: 25px;  width: 50%; border-radius: 5px; " placeholder="search for products,brands and more">
+          <ol>
+            <li><a href="">PROFILE</a></li>
+            <li><a href="">WISHLIST</a></li>
+            <li><a href="">BAG</a></li></ol>
+        </div>
+      </article>
+    </section>
+</body>
+</html>
