@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DROPDOWN</title>
+    <style>
+        section{
+            height: 400px;
+            width: 400px;
+            border: 2px solid;
+            background-color: lightcoral;
+        }
+
+        .btn{
+            height: 20px;
+            width: 200px;
+            border-radius: 5px;
+            padding: 2px;
+            cursor: pointer;
+        }
+
+        .dropmenu{
+            position: relative;
+            display: inline-block;
+        }
+        .menu{
+           position: absolute;
+           background-color: lightseagreen;
+           min-width: 180px;
+           box-shadow: 0 8px 18px lightpink;
+           z-index: 1;
+           display: none;
+        }
+
+        .menu a{
+            display: block;
+            color: black;
+            padding: 2px 4px;
+            text-decoration: none;
+        }
+
+        .menu a:hover{
+            background-color: burlywood;
+        }
+
+        .dropmenu:hover .menu{
+            display: block;
+        }
+    
+        .dropmenu:hover .btn{
+            background-color: aqua;
+        }
+
+    </style>
+</head>
+<body>
+    <section >
+       <div class="dropmenu">
+        <button class="btn">select your destination</button>
+        <div class="menu">
+            <a href="#">MUNNAR</a>
+            <a href="#">WAYANAD</a>
+            <a href="#">KODAI</a>
+            <a href="#">OOTY</a>
+            <a href="#">YERCAUD</a>
+        </div>
+       </div>
+    </section>
+</body>
+</html>
