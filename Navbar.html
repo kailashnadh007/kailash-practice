@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAV BAR</title>
+    <style>
+        div{
+            height: 200px;
+            width: 200px;
+            /* background-color:lightcoral ; */
+        }
+
+        ul{
+           list-style-type: none;
+           
+        }
+
+        li a{
+            display: block;
+            text-decoration: none;
+            padding: 10px 20px 10px;
+            color: black;
+        }
+
+        li a.home{
+            background-color: lightgreen;
+        }
+
+        li a:hover:not(.home){
+            background-color: lightpink;
+        }
+    </style>
+</head>
+<body>
+    <h1>NAVIGATION BAR</h1>
+    <div>
+        <ul>
+            <li><a class="home" href="home">HOME</a></li>
+            <li><a href="about">ABOUT US</a></li>
+            <li><a href="contact">CONTACT</a></li>
+            <li><a href="support">SUPPORT</a></li>
+        </ul>
+    </div>
+</body>
+</html>
