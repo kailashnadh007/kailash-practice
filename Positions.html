@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        #main{
+            background-color: lightblue;
+            position: relative;
+            left: 50px;
+            top: 10px;
+        }
+
+        #sub{
+            background-color: lightcoral;
+            position: fixed;
+            right: 10px;
+        }
+
+        #last{
+            background-color: lightgreen;
+            position: sticky;
+            bottom: 10px;
+            left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore, esse.</div><br><br>
+    <div id="sub">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed voluptates dignissimos officia excepturi deserunt doloremque?</div><br><br>
+    <div id="last">Lorem ipsum dolor sit amet consectetur adipisicing elit. At facilis sit minima illum sint minus ab rerum explicabo similique laudantium?</div><br><br>
+</body>
+</html>
