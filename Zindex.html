@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z INDEX</title>
+    <style>
+        #one{
+            position: relative;
+        }
+
+        #two{
+            border: 2px solid;
+            position: relative;
+            z-index: 1;
+            height: 100px;
+            width: 400px;
+        }
+
+        #three{
+            position: absolute;
+            z-index: 3;
+            background-color: aqua;
+            width: 200px;
+            height: 50px;
+            left: 50px;
+            top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>z-index</h1>
+    <div id="one">
+    <div id="two">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima porro sunt iusto, cupiditate est illum architecto quae esse quis dolore animi, accusantium similique quam aspernatur iste hic quos ab autem?</div>
+    <div id="three">absolute position</div>
+    </div>
+</body>
+</html>
