@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient</title>
+    <style>
+
+        *{
+            box-sizing: border-box;
+            padding: 0%;
+            margin: 0%;
+        }
+        #nav{
+            border: 2px solid;
+            height: 50px;
+            width: 100%;
+            background-color: lime;
+            /* position: relative; */
+        }
+
+        #nav>ul{
+            list-style-type: none;
+            flex-wrap: wrap;
+            padding: 10px;
+            
+        }
+
+        li{
+            display: inline;
+            padding: 30px;
+            align-items: center;
+        }
+
+        a{
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a:hover{
+            color: black;
+            display:inline-block;
+            background-color: cornflowerblue;
+        }
+         
+        .drop{
+            position:relative;
+        }
+        
+        #content{
+             display: none;
+             position: static;
+             padding: 20px;
+             background-color: black;
+        }
+
+        #content a{
+            display: block;
+            padding: 10px;
+            color: white;
+        }
+        
+        #content a:hover{
+            background-color: lightgrey;
+            color: black;
+        }
+        
+
+
+        .drop:hover #content{
+            position:absolute;
+            display: block;
+            background-color: black;
+        }
+
+        #main{
+            height: 100vh;
+            width: 100%;
+            border: 2px solid;
+            padding: 10px;
+            background: linear-gradient(violet,purple,darkviolet,pink,lightpink);
+        }
+        
+    </style>
+</head>
+<body>
+    <section>
+    <section id="nav">
+        <ul>
+            <li><a href="home">HOME</a></li>
+            <li><a href="about">ABOUT</a></li>
+            <li class="drop"><a  href="generes">GENERES</a>
+            <div id="content">
+                <a href="">ACTION</a>
+                <a href="">DRAMA</a>
+                <a href="">ADVENTURE</a>
+                <a href="">DOCUMENTARY</a>
+                <a href="">ANIME</a>
+                <a href="">HORROR</a>
+                <a href="">SCI-FI</a>
+                <a href="">CARTOONS</a>
+                <a href="">TELUGU</a>
+                <a href="">HINDHI</a>
+                <a href="">TAMIL</a>
+                <a href="">MALAYALAM</a>
+                <a href="">ENGLISH</a>
+                </li>
+            </div>
+            <li><a href="login">LOGIN</a></li>
+        </ul>
+    </section>
+    <div id="main">
+         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam deserunt excepturi iure tempora delectus quae est, omnis, dolorem illum veritatis non dolore suscipit fugiat veniam ullam nulla doloremque quisquam quos culpa saepe quibusdam voluptatem! Quidem, fugit voluptas! Repellendus aperiam amet, eveniet inventore esse, voluptates laborum, dolore similique ipsa ea eos illo enim libero aut quisquam atque beatae est expedita vero saepe aspernatur reprehenderit et. Voluptas cupiditate, placeat maxime eveniet est ratione quae quam corporis aliquid officia amet hic modi? Maxime dolor, laborum nostrum, consectetur natus, quo ea rem ad eveniet labore aspernatur aut esse quae omnis. Qui, consequuntur alias molestiae quam facere commodi aliquam repellat porro? Illo praesentium cumque, obcaecati iure facilis id quam perspiciatis adipisci ipsam vero minus quas debitis natus eligendi nemo dolor aspernatur, sunt nisi incidunt mollitia. Facilis saepe, voluptatibus voluptatem optio dignissimos excepturi debitis ducimus laudantium similique! Explicabo eos optio ullam quod tempore hic esse amet autem dolores numquam, quia labore necessitatibus saepe expedita natus provident dolorem minima temporibus incidunt maxime mollitia nihil magnam error? Tempore quod neque quasi quia repellat exercitationem incidunt ratione. Sequi accusantium quas incidunt nam iure, pariatur modi mollitia similique aliquam debitis aut ratione, est eveniet veniam quibusdam quisquam laborum autem cumque!
+    </div>
+</section>
+</body>
+</html>
