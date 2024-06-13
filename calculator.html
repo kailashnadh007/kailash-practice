@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        div{
+            border: 2px solid;
+            height: 400px;
+            width: 400px;
+            background-color: lightcoral;
+            padding: 5%;
+        }
+
+        input{
+            background-color: white;
+            border: 1px dotted;
+        }
+
+        input:focus{
+            background-color: antiquewhite;
+            border: 2px solid;
+        }
+
+        button{
+            background-color: lightsalmon;
+            font-weight: 200;
+        }
+
+        button,input:hover{
+            cursor: pointer;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1>CALCULATOR</h1>
+        <label for="">ENTER NUMBER :</label>
+        <input type="text" id="num1"><br><br>
+        <label for="">ENTER NUMBER :</label>
+        <input type="text" id="num2"><br><br>
+        <label for="">RESULT :</label>
+        <input type="text" id="result"><br><br>
+        <button onclick="add()">+</button> <button onclick="sub()">-</button>
+        <button onclick="mup()">*</button> <button onclick="div()">/</button><br><br>
+        <button onclick="clr()">CLEAR</button>
+    </div>
+    <script src="./calculator.js"></script>
+</body>
+</html>
